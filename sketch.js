@@ -66,3 +66,11 @@ function draw(){
     log6.display();
     sling.display();    
 }
+
+function mouseReleased() {
+	sling.fly();
+}
+
+function mouseDragged() {
+	Matter.Body.setPosition(bird.body, {x: mouseX,y: mouseY});
+}
